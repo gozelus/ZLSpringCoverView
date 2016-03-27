@@ -49,7 +49,7 @@
     self.springCoverView.mode = mode;
     self.springCoverView.loadingTitle = @"StyleBottom";
     [self.springCoverView zl_show];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.springCoverView zl_remove];
     });
     
@@ -62,7 +62,7 @@
     mode.Damping = 0.4;
     self.springCoverView.style = ZLSpringCoverViewStyleLeft;
     self.springCoverView.mode = mode;
-    self.springCoverView.loadingTitle = @"StyleBottom";
+    self.springCoverView.loadingTitle = @"StyleLeft";
     [self.springCoverView zl_show];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.springCoverView zl_remove];

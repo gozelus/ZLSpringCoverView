@@ -150,13 +150,13 @@ static const char* modeKey = "modeKey";
     subCover1.width = subViewWidth;
     subCover1.height = self.loadingTitleLabel.height;
     subCover1.backgroundColor = self.mode.backgroundColor;
-    subCover1.alpha = 0.8;
+    subCover1.alpha = 0.7;
     [coverView addSubview:subCover1];
     
     UIView *subCover2 = [[UIView alloc] initWithFrame:subCover1.frame];
     subCover2.x = CGRectGetMaxX(subCover1.frame) + ZLProgressMagrin ;
     subCover2.backgroundColor = self.mode.backgroundColor;
-    subCover2.alpha = 0.8;
+    subCover2.alpha = 0.7;
     [coverView addSubview:subCover2];
     
     coverView.backgroundColor = [UIColor clearColor];
@@ -280,6 +280,7 @@ static const char* modeKey = "modeKey";
     self.backgroundColor = self.mode.backgroundColor;
     if (self.superview) {
         self.hidden = NO;
+
         [UIView animateWithDuration:1
                               delay:0
              usingSpringWithDamping:self.mode.Damping
